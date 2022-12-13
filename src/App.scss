@@ -196,9 +196,9 @@ code {
       }
       @include breackpoints(mobile) {
         flex-direction: column;
-        width: 325px;
-        left: 25px;
+        width: calc(100% - 70px);
         top: 265px;
+        left: 36px;
       }
     }
   }
