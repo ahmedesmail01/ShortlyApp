@@ -162,7 +162,7 @@ code {
     position: relative;
     align-content: flex-start;
     .shorted-div {
-      max-width: 936px;
+      max-width: calc(100% - 28px);
       position: absolute;
       padding: 15px;
       background-color: #eee;
