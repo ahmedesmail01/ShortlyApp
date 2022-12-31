@@ -54,7 +54,7 @@ const Input = () => {
             <span className="original-link">
               {shorted.result.original_link}
             </span>
-            <a href={shorted.result.original_link} target="_blank" className="short-link">{shorted.result.short_link}</a>
+            <a href={shorted.result.original_link} rel="noreferrer" target="_blank" className="short-link">{shorted.result.short_link}</a>
             <button className="btn btn-primary" onClick={handleCopy}>
               {copy}
             </button>
