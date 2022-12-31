@@ -41,7 +41,7 @@ const Input = () => {
         <div className="container input">
           <input
             type="text"
-            placeholder="shorten a link here...."
+            placeholder="shorten a link here....."
             onChange={(e) => SetInput(e.target.value)}
             value={input}
           />
@@ -54,7 +54,7 @@ const Input = () => {
             <span className="original-link">
               {shorted.result.original_link}
             </span>
-            <span className="short-link">{shorted.result.short_link}</span>
+            <a href={shorted.result.original_link} target="_blank" className="short-link">{shorted.result.short_link}</a>
             <button className="btn btn-primary" onClick={handleCopy}>
               {copy}
             </button>
